@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-paper text-slate-800;
+}
+
+/* The invoice paper must always look the same (printed document), so it
+   gets its own font stack independent of Tailwind's default sans-serif UI
+   font. Matches the reference invoice's plain sans-serif (Arial/Helvetica
+   -style) typeface. */
+.invoice-paper {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  background: #fff;
+}
